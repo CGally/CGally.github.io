@@ -1,0 +1,67 @@
+body {
+  background-color: #222222;
+}
+
+#header {
+  color: white;
+  text-align: center;
+}
+canvas {
+    background-color: lightblue;
+    background-size: 700px 500px;
+    box-shadow: 10px 10px 20px green;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    outline: black 5px solid;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#start {
+  background-color: lightgreen;
+  box-shadow: 10px 10px 20px black;
+  left: 50%;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  position: fixed;
+  outline: black 5px solid;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.levelRadio {
+  display: none;
+}
+
+.num {
+  display: none;
+}
+
+#volume-control {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  width: 20%;
+}
+
+#volume {
+  display: inline-block;
+}
+
+#vol {
+  color: white;
+  float: left;
+  padding-right: 10px;
+}
+
+#mute {
+  color: white;
+  display: none;
+  float: left;
+  padding-right: 10px;
+}

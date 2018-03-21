@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Platformer</title>
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+</head>
+<body>
+  <h1 id='header'></h1>
+  <div id='start'>
+    <button id='startBtn' onclick="gameStart()">Start</button>
+  </div>
+  <canvas id="canvas" width="700" height="500"></canvas>
+  <script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+  <script>
+    var config = {
+      apiKey: "AIzaSyAjGiyPAM0eypRMVCVa8Xao1z4OkfwgTfU",
+      authDomain: "gally-platformer.firebaseapp.com",
+      databaseURL: "https://gally-platformer.firebaseio.com",
+      projectId: "gally-platformer",
+      storageBucket: "",
+      messagingSenderId: "942740796947"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="scripts/platform.js"></script>
+  <script src="scripts/goal.js"></script>
+  <script src="scripts/player.js"></script>
+  <script src="scripts/basicEnemy.js"></script>
+  <script src="scripts/levelOne.js"></script>
+  <script src="scripts/app.js"></script>
+</body>
+</html>
