@@ -19,6 +19,10 @@ p {
   padding-bottom: 15%;
 }
 
+#about {
+  padding-top: 4%;
+}
+
 body {
   padding-bottom: 5rem;
 }
@@ -37,6 +41,7 @@ body {
 
 .black {
   color: black;
+  display: inline-block;
   font-size: 28px;
 }
 
@@ -63,6 +68,11 @@ main {
 
 .project img {
   width: 100%;
+}
+
+.git {
+  display: inline-block;
+  padding-left: 10px;
 }
 
 footer.mdl-mini-footer {
