@@ -6,6 +6,7 @@ var canvas = document.getElementById("canvas"),
     platforms,
     player,
     goal,
+    hazards,
     requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
                             window.requestAnimationFrame = requestAnimationFrame;
 
@@ -13,6 +14,7 @@ function render() {
   platforms = levelOne.platforms;
   enemies = levelOne.enemies;
   goal = levelOne.goal;
+  hazards = levelOne.hazards;
   levelOne.setPlayer();
 };
 
@@ -38,6 +40,12 @@ function step() {
       player.friction = 0.8;
     } else if (dir === "t") {
       player.velY = 0;
+    }
+  }
+  for(var i = 0; i < hazards.length; i++){
+    hazards[i].render();
+    if (player.colCheck(player, hazards[i])) {
+      levelOne.setPlayer();
     }
   }
   for(var i = 0; i < enemies.length; i++){
@@ -69,5 +77,5 @@ document.body.addEventListener("keyup", function (e) {
 });
 
 window.onload = function() {
-  header.textContent = 'Reach the goal to meet Chris Gallagher';
+  render();
 };

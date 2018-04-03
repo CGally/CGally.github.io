@@ -1,11 +1,17 @@
 body {
-  background-color: #222222;
+  background-color: #111111;
 }
 
 #header {
   color: white;
   text-align: center;
 }
+
+.directions {
+  color: white;
+  text-align: center;
+}
+
 canvas {
     background-color: lightblue;
     background-size: 700px 500px;
